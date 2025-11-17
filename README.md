@@ -35,6 +35,9 @@ The system is architectured with modular and clearly interacting components.
 
 Class and component diagrams have been developed, mapping out these relationships and their interactions for maintainable and scalable growth in the future.[Project Presentation (PDF)]
 
+![Class Diagram](https://github.com/shawrajdeep00/Smart-Warehouse-System/blob/main/Class%20diagram.jpg)
+
+
 ## Technologies Used
 
 - **Programming Language:** Java
