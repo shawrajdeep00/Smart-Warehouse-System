@@ -1,0 +1,10 @@
+BatteryTest.class
+DummyBox.class
+StorageSystemTest.class
+StorageAreaTest.class
+DummyProcess.class
+AGVTest.class
+LogManagerTest.class
+BoxTest.class
+ChargingStationTest.class
+ProcessTest.class
