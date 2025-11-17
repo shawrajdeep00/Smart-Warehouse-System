@@ -113,4 +113,5 @@ This Warehouse Automation System demonstrates a highly modular, test-driven, and
 
 ### Presentation Reference
 
-[1](https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/141576160/a40e1fa0-dde6-4aa9-ac0b-cf8b841138d1/Warehouse-Automation-system-compressed.pdf)
+[Project Presentation (PDF)](https://github.com/shawrajdeep00/Smart-Warehouse-System/blob/main/Warehouse%20Automation%20system-compressed.pdf)
+
