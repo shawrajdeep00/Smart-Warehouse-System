@@ -33,7 +33,7 @@ The system is architectured with modular and clearly interacting components.
 - **ChargingStation:** Controls the interaction between AGVs and station resources, ensuring charging is performed orderly and only one AGV charges at a time.
 - **Process and LogManager:** Processes storage and retrieval requests, assigns AGVs, and logs all operations within the system for both user visibility and permanent auditing.
 
-Class and component diagrams have been developed, mapping out these relationships and their interactions for maintainable and scalable growth in the future.[1]
+Class and component diagrams have been developed, mapping out these relationships and their interactions for maintainable and scalable growth in the future.[Project Presentation (PDF)]
 
 ## Technologies Used
 
@@ -99,7 +99,7 @@ The system has been rigorously tested with targeted unit tests for every class a
 - **AGVTest and BoxTest:** Movement, position, box pick-up and drop, and safe error handling for improper operations.
 - **StorageAreaTest:** Box storage and retrieval, slot finding, invalid position management, and safe exception handling.
 
-All unit tests have reported no failures or errors, demonstrating robust and resilient implementation.[1]
+All unit tests have reported no failures or errors, demonstrating robust and resilient implementation.[Project Presentation (PDF)]
 
 ## Simulation
 
@@ -109,7 +109,7 @@ A simulation video scenario illustrates the full system in operation:
 
 ## Conclusion
 
-This Warehouse Automation System demonstrates a highly modular, test-driven, and robustly architected application for modern warehouse management. By leveraging autonomous robotics, real-time logging, synchronized resource allocation, and a friendly GUI, it ensures safe, efficient, and audit-ready operations, meeting industry needs for reliability and transparency without referencing individual developer names.[1]
+This Warehouse Automation System demonstrates a highly modular, test-driven, and robustly architected application for modern warehouse management. By leveraging autonomous robotics, real-time logging, synchronized resource allocation, and a friendly GUI, it ensures safe, efficient, and audit-ready operations, meeting industry needs for reliability and transparency without referencing individual developer names.[Project Presentation (PDF)]
 
 ### Presentation Reference
 
