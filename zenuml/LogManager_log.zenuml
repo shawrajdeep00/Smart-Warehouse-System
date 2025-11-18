@@ -1,0 +1,84 @@
+            // Generated from Java method: LogManager.log
+            // This is an experimental feature. Please report issues to https://github.com/ZenUml/jetbrains-zenuml/discussions
+            
+            LogManager.log(message) {
+  try {
+    if (writer == null) {
+      initializeLog()
+      try {
+        if (baseFolder == null || baseFolder.isEmpty()) {
+          new InvalidPathException("Base folder name is empty or null.")
+          super(message)
+        }
+        Date now = new Date()
+        new Date()
+        SimpleDateFormat yearFormat = new SimpleDateFormat("yyyy")
+        new SimpleDateFormat("yyyy")
+        SimpleDateFormat monthFormat = new SimpleDateFormat("MMM")
+        new SimpleDateFormat("MMM")
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd")
+        new SimpleDateFormat("dd")
+        SimpleDateFormat timeFormat = new SimpleDateFormat("HH-mm-ss")
+        new SimpleDateFormat("HH-mm-ss")
+        String year = yearFormat.format(now)
+        yearFormat.format(now)
+        String month = monthFormat.format(now)
+        monthFormat.format(now)
+        String date = dateFormat.format(now)
+        dateFormat.format(now)
+        String time = timeFormat.format(now)
+        timeFormat.format(now)
+        String folderPath = "Logs/" + baseFolder + "/" + year + "/" + month + "/" + date
+        File folder = new File(folderPath)
+        new File(folderPath)
+        if (!folder.exists()) {
+          boolean created = folder.mkdirs()
+          folder.mkdirs()
+          if (!created && !folder.exists()) {
+            new InvalidPathException("Failed to create folder path: " + folderPath)
+            super(message)
+          }
+          System.out.println("[LOG] Created folders: " + folderPath)
+        }
+        String fileName = "log_" + time + ".txt"
+        File logFile = new File(folderPath, fileName)
+        new File(folderPath, fileName)
+        try {
+          boolean fileCreated = logFile.createNewFile()
+          logFile.createNewFile()
+          if (!fileCreated && !logFile.exists()) {
+            new InvalidPathException("Failed to create log file: " + logFile.getAbsolutePath())
+            super(message)
+          }
+        }
+        catch (IOException ioe) {
+          new InvalidPathException("I/O error while creating log file: " + ioe.getMessage(), ioe)
+          super(message, cause)
+        }
+        try {
+          new BufferedWriter(new FileWriter())
+        }
+        catch (IOException ioe) {
+          new InvalidPathException("I/O error while opening log writer: " + ioe.getMessage(), ioe)
+          super(message, cause)
+        }
+        log("[SYSTEM] Log initialized at " + now)
+        // Method re-entered
+        System.out.println("[LOG] Log file created: " + logFile.getAbsolutePath())
+      }
+      catch (InvalidPathException ipe) {
+      }
+      catch (Exception e) {
+        new InvalidPathException("Unexpected error initializing log: " + e.getMessage(), e)
+        super(message, cause)
+      }
+    }
+    String timestamp = new SimpleDateFormat("HH:mm:ss").format(new Date())
+    new SimpleDateFormat("HH:mm:ss").format(new Date())
+    writer.write("[" + timestamp + "] " + message + "\n")
+    writer.flush()
+  }
+  catch (IOException | InvalidPathException e) {
+    System.err.println("Error writing to log: " + e.getMessage())
+  }
+}
